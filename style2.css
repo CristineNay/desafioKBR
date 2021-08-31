@@ -240,6 +240,30 @@ button:hover {
   width: 57%;
 }
 
+#box{
+  background: #FFFDFD;
+  box-shadow: 0px 10px 20px rgb(9 85 122 / 6%);
+  border-radius: 39px;
+  width: 60%;
+  height: 136px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding-left: 90px;
+  padding-right: 90px;
+  position: relative;
+}
+
+#layer{
+    width: 100%;
+    border-radius: 0 200px 200px 0px;
+}
+#coiso2{
+    padding-left: 19px;
+    padding-right: 116px;
+    background-color: antiquewhite;
+}
+
 @media screen and (max-width: 1126px) {
   #s3 {
     display: none;
@@ -292,6 +316,11 @@ button:hover {
   .icon-ret:hover{
     width: 57%;
   }
+  #box{
+    padding-left: 40px;
+    padding-right: 40px;
+    position: unset;
+  }
 }
 @media screen and (max-width: 600px) {
   #linha2 {
@@ -302,6 +331,10 @@ button:hover {
 
   #header-c2 {
     padding-left: 0%;
+  }
+  #img-retangulo {
+    height: 938.44px;
+    width: -webkit-fill-available;
   }
 
   .card {
@@ -325,6 +358,7 @@ button:hover {
     padding-left: 3%;
     padding-right: 3%;
     text-align: center;
+    position: inherit;
   }
 
   #linha5-ret{
