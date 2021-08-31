@@ -1,6 +1,9 @@
+$btn-laranja-cor: linear-gradient(90deg, #FD8B09 0.01%, #F6B820 100%);
+$bg-header: linear-gradient(180deg, #E3F3FF 50%, rgba(239, 248, 255, 0) 100%);
+$vec-ml: -9px;
 
 body{
-
+    font-family: 'Poppins', sans-serif;
 }
 
 header{
@@ -8,30 +11,31 @@ header{
     height: 831px;
     left: 0px;
     top: -2px;
-    background: linear-gradient(180deg, #E3F3FF 50%, rgba(239, 248, 255, 0) 100%);
+    background: $bg-header;
 }
 
 #header-c2{
     padding-left: 7%;
 }
 
+
 #vector11{
     position: unset;
     width: 294px;
     /* height: 232.5px; */
-    margin-left: -9px;
+    margin-left: $vec-ml;
     top: -12px;
 }
 
 #vector12{
     position: unset;
-    margin-left: -9px;
+    margin-left: $vec-ml;
     margin-top: -138px;
 }
 
 #vector13{
     position: unset;
-    margin-left: -9px;
+    margin-left: $vec-ml;
     margin-top: -265px;
 }
 
@@ -43,8 +47,6 @@ header{
 }
 
 #titulo{
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 35px;
     line-height: 130%;
@@ -53,8 +55,6 @@ header{
 }
 
 .header-texto{
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     font-size: 14px;
     line-height: 23px;
     color: #000000;
@@ -71,7 +71,6 @@ button{
     height: 37px;
     border: none;
     border-radius: 26px;
-    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-size: 13px;
     line-height: 136%;
@@ -83,7 +82,7 @@ button{
 
 button:hover{
     cursor: pointer;
-    box-shadow: 1px 3px 11px 4px #b3b3b3;
+    box-shadow: 1px -2px 11px 5px rgb(150 127 76 / 22%);
 }
 
 #btn1{
@@ -92,10 +91,19 @@ button:hover{
     margin-right: 2%;
     margin-bottom: 4px;
 }
+
+#btn1:hover, #btn3:hover{
+    box-shadow: 0px 4px 10px rgb(30 177 254 / 62%);
+}
+
 #btn2{
-    background: linear-gradient(90deg, #FD8B09 0.01%, #F6B820 100%);
+    background: $btn-laranja-cor;
     box-shadow: 0px 4px 10px rgba(247, 179, 29, 0.22);
     border-radius: 26px;
+    position: relative;
+}
+#btn2:hover{
+    box-shadow: 0px 4px 10px rgb(247 179 29);
 }
 
 #linha2{
@@ -190,15 +198,53 @@ button:hover{
     box-shadow: 0px 4px 50px rgb(122 122 122 / 12%);
 }
 
+.card:hover{
+    background-color: #f5f5f5e0;
+}
+
 #icon{
     width: 52px;
 }
 
 #linha5{
-    background: linear-gradient(180deg, #E3F3FF 50%, rgba(239, 248, 255, 0) 100%);
+    background: $bg-header;
+}
+#vectors2{
+    margin-top: -137px; 
+    height: 500px;
+}
+
+#txt-meio{
+    padding-left: 4%;
+    padding-right: 21%;
+    text-align: center;
+}
+
+#linha5-ret{
+
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    color: white;
+
+}
+
+.icon-ret{
+ 
 }
 
 
+#quadrado{
+    background: linear-gradient(81.82deg, #FE900A 6.48%, #F7B81F 107.81%);
+    border-radius: 15px 15px 50px 15px;
+    width: 193.99px;
+    height: 265px;
+    /* left: 361px; */
+    /* top: 3526px; */
+    margin-top: -35px;
+}
 @media screen and (max-width: 1126px) {
     #s3{
         display: none;
@@ -220,19 +266,28 @@ button:hover{
         margin-top: -206px;
     }
 
-
     #linha4{
         margin-left: 8%;
         margin-right: 8%;
         font-size: 20px;
     }
-    #linha5{
-       
+    #dentro-fora {
+        width: 89%;
     }
     .card{
 
         padding: 23px;
         height: 195px;
+    }
+    #vectors2{
+        margin-top: -139px;
+    }
+    #txt-meio{
+        text-align: end;
+        padding-right: 5%;
+    }
+    .icon-ret{
+        width: 72%;
     }
 }
 
@@ -251,6 +306,19 @@ button:hover{
         height: 149px;
         padding: 15px;
         margin-bottom: 108px;
+    }
+
+    #dentro-fora {
+        width: 60%;
+    }
+        
+    #vectors2{
+        margin-top: -521px;
+    }
+    #txt-meio{
+        padding-left: 4%;
+        padding-right: 4%;
+        text-align: center;
     }
 }
 
