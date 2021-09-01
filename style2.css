@@ -424,12 +424,12 @@ button:hover {
     padding: 11px;
   }
   #coiso2 {
-    padding-left: 19px;
-    padding-right: 36px;}
-    #layer {
+    padding-left: 6px;
+    padding-right: 0px;}
+  #layer {
     width: 90%;
     margin-bottom: 24px;}
-    button {
+  button {
     width: 246px;
     height: 47px;}
 }
