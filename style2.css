@@ -39,6 +39,11 @@ header {
   /* height: 193px; */
   left: 363px;
   margin-top: 18px;
+  transition: all 1.5s ease-in-out;
+}
+
+#img-clipart:hover {
+  transform: rotateY(180deg);
 }
 
 #titulo {
@@ -74,10 +79,12 @@ button {
   letter-spacing: 0.025em;
   text-transform: uppercase;
   color: white;
+  transition: transform 250ms;
 }
 
 button:hover {
   cursor: pointer;
+  transform: translateY(-10px);
 }
 
 #btn1 {
@@ -108,6 +115,11 @@ button:hover {
   margin-right: 29%;
   margin-top: -131px;
   position: absolute;
+  transition: transform 250ms;
+}
+
+#box:hover, #linha2:hover {
+  transform: translateY(-10px);
 }
 
 .subtitulo {
@@ -253,6 +265,7 @@ button:hover {
   padding-right: 90px;
   position: relative;
   margin-bottom: 90px;
+  transition: transform 250ms;
 }
 
 #layer{
@@ -330,6 +343,14 @@ button:hover {
     padding-left: 40px;
     padding-right: 40px;
     position: unset;
+  }
+  #linha6{
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  #layer{
+    width: 50%;
+    margin-bottom: 8%;
   }
 }
 @media screen and (max-width: 600px) {
